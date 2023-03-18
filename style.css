@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 0.8rem;
+    width: 550px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container {
+    width: 90%;
+}
+
+.card-container>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.text-container {
+    margin: 2% 4% 2% 5%;
+    width: 85%;
+}
+
+.text-container .product {
+    padding: 1rem 0 1rem;
+    letter-spacing: 4px;
+    font-weight: 400;
+    color: hsl(228, 12%, 48%);
+}
+
+.text-container .title {
+    font-family: "Fraunces", sans-serif;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.text-container>p {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    margin: 7% 2% 7% 0;
+    line-height: 1.3;
+}
+
+.text-container .prices {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.text-container .prices .r-price {
+    font-family: "Fraunces", sans-serif;
+}
+
+.text-container .prices .d-price {
+    color: red;
+    font-weight: 400;
+}
+
+.text-container .btn {
+    width: 100%;
+    margin-top: 20px;
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    padding: 15px 10px 15px 10px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.text-container .btn:hover {
+    cursor: pointer;
+    background-color: hsl(212, 21%, 14%);
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        align-items: flex-start;
+        ;
+    }
+
+    .card {
+        box-shadow: none;
+        flex-direction: column;
+        margin: 10px;
+        height: 100%;
+    }
+
+    .card-container {
+        height: 300px;
+    }
+
+    .card-container>img {
+        border-radius: 10px 10px 0 0;
+        object-fit: cover;
+    }
+}
